@@ -167,7 +167,7 @@ h4{
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    gap:50px;
 }
 .experience h2{
     color: white;
@@ -451,6 +451,7 @@ transition: var(--transition);
         display: none;
     }
     .about-me{
+        gap:0;
         flex-direction: column;
     }
     .experience{
@@ -536,5 +537,11 @@ transition: var(--transition);
     }
     .NP{
         font-size: 25px;
+    }
+    .card{
+        width: 350px;
+    }
+    .projets{
+        width: 85%;
     }
 }
