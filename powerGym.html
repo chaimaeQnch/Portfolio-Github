@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset= "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <title>Potfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel = "stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<section id="home" class="header">
+    <nav>
+        <div style="
+            display: flex;
+            justify-content: space-between;
+            width: 100%;">
+            <h1 class= "Titre"><img src="images/logo.png" width="40px" height="38px" />Port<span>folio</span></h1>
+            <button onclick="toggleMenu()" data-collapse-toggle="liens" type="button" class="button menu" aria-controls="navbar-cta" aria-expanded="false">
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+        </div>
+        <ul class="navbar" id="liens">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about-me">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>        </ul>
+    </nav>
+    <div class="w-[400px] md:w-[700px] lg:w-[900px] mx-auto pb-12">
+        <video class="rounded-lg mt-12  mx-auto" controls autoPlay>
+            <source src="videos/powergym.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <div class="text-white mt-6 ">
+            <h1 class="font-bold text-2xl text-[#f82a35]">PowerGym - Gym Management for Easy  Product, Membership, and Schedule Control</h1>
+            <p class="mt-4"> This application provides a comprehensive platform for managing gym operations, enabling users to browse products, handle memberships, and track schedules with ease. Administrators can efficiently manage product listings, subscriptions, and class timetables, streamlining the entire gym experience for both members and staff.</p>
+            <h2 class="mt-2 font-bold text-xl text-[#7bbdff]">Core Features of PowerGym:</h2>
+            <ul class="ml-4">
+                <li class="list-disc mt-2">
+                    <strong class="block">User Management:</strong>
+                    Each user has the ability to create and manage their own profile, which includes personal details such as their name, email, and password.
+                </li>
+                <li class="list-disc mt-2">
+                    <strong class="block">Product Management:</strong>
+                    Users can easily browse the gym's product catalog, view detailed descriptions, attractive images, and availability information. They can also search for specific products and add them to their shopping cart. The online ordering process is simple and secure, offering multiple payment options and allowing users to track their orders.
+                </li>
+                <li class="list-disc mt-2">
+                    <strong class="block">Personalized Subscriptions:</strong>
+                    We offer a variety of subscription packages tailored to the individual needs of our users. The app clearly presents the available subscriptions, including details on benefits, pricing, and durations. Users can select the plan that best suits their goals and preferences, and easily manage or renew their memberships through the app.
+                </li>
+                <li class="list-disc mt-2">
+                    <strong class="block">Schedule Management:</strong>
+                    The app enables administrators to manage the gym’s schedules. They can create, edit, or delete time slots for various activities, set specific days and times, and assign activities to each slot. This feature helps organize the gym’s activities and provides users with clear visibility of class schedules and availability.
+                </li>
+                <li class="list-disc mt-2">
+                    <strong class="block">Admin Dashboard:</strong>
+                    A robust admin interface allows our team to efficiently manage members and gym administration. Admins can handle member profiles, memberships, personal information, and payments. They also have full control over the product catalog, with the ability to add, update, or remove products, as well as manage subscription packages.
+                </li>
+            </ul>
+            <div class="mt-2">
+                <h2 class="mt-2 font-bold text-xl text-[#7bbdff]">Technologies Used:</h2>
+                <div class=" mb-4">
+                    <h3 class="text-lg font-semibold text-[#f82a35] ">Frontend</h3>
+                    <ul class="list-disc ml-6">
+                        <li>HTML, CSS, Bootstrap for responsive and modern design.</li>
+                    </ul>
+                </div>
+                <div class=" mb-4">
+                    <h3 class="text-lg font-semibold text-[#f82a35]">Backend</h3>
+                    <ul class="list-disc ml-6">
+                        <li>Django (Python Framework) for robust server-side logic, managing user accounts, session handling, and secure user authentication.</li>
+                    </ul>
+                </div>
+
+                <div class=" mb-4">
+                    <h3 class="text-lg font-semibold text-[#f82a35]">Database</h3>
+                    <ul class="list-disc ml-6">
+                        <li>MySQL for reliable data storage and management of users, products...</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('liens');
+        menu.classList.toggle('show');
+    }
+</script>
+</body>
+</html>

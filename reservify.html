@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset= "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <title>Potfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel = "stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<section id="home" class="header">
+    <nav>
+        <div style="
+            display: flex;
+            justify-content: space-between;
+            width: 100%;">
+            <h1 class= "Titre"><img src="images/logo.png" width="40px" height="38px" />Port<span>folio</span></h1>
+            <button onclick="toggleMenu()" data-collapse-toggle="liens" type="button" class="button menu" aria-controls="navbar-cta" aria-expanded="false">
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+        </div>
+        <ul class="navbar" id="liens">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about-me">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="w-[900px]  mx-auto pb-12">
+        <video class="rounded-lg mt-12  mx-auto" controls autoPlay>
+            <source src="videos/reservify.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <div class="text-white mt-6 ">
+            <h1 class="font-bold text-2xl text-[#f82a35]">Reservify - Online Booking Platform for Accommodations</h1>
+            <p class="mt-4"> Reservify is a comprehensive web application developed to simplify the process of booking accommodations online. The platform provides both accommodation partners and users with an intuitive interface to manage and book stays efficiently.</p>
+            <h2 class="mt-2 font-bold text-xl text-[#7bbdff]">Core Features of Reservify:</h2>
+            <ul class="ml-4">
+                <li class="list-disc mt-2">
+                    <strong class="block">User Management:</strong>
+                    Each user has the ability to create and manage their own profile, which includes personal details such as their name, email, and password.
+                </li>
+                <li class="list-disc mt-2">
+                    <strong class="block">Advanced Search and Filtering:</strong>
+                    Users can search for accommodations based on destination, accommodation type, dates of stay, number of guests, and number of rooms.
+                </li>
+                <li class="list-disc mt-2">
+                    <strong class="block">Accommodation Management (CRUD Functionality):</strong>
+                    Partners can easily manage their accommodations, including adding new images, updating existing information such as accommodation names, prices, rates, and amenities.
+                </li>
+                <li class="list-disc mt-2">
+                    <strong class="block">User Reviews and Ratings:</strong>
+                    After completing a stay, users can leave reviews and ratings, helping others make informed booking decisions.
+                </li>
+                <li class="list-disc mt-2">
+                    <strong class="block">Secure Online Payments via Stripe:</strong>
+                    Stripe is integrated for processing payments. It ensures that all transactions are encrypted and secure, allowing users to pay for their bookings with confidence.
+                </li>
+                <li class="list-disc mt-2">
+                    <strong class="block">Booking Confirmation Emails:</strong>
+                    Once a booking is made, users receive a detailed confirmation email containing their reservation details, which ensures transparency and clear communication.
+                </li>
+                <li class="list-disc mt-2">
+                    <strong class="block">Messaging System:</strong>
+                    A chat feature is available for users who have reservations at the same destination. This allows them to communicate directly with other guests, share tips, and exchange information about the area, enhancing their travel experience and fostering a sense of community.
+                </li>
+                <li class="list-disc mt-2">
+                    <strong class="block">Admin Dashboard:</strong>
+                    A comprehensive backend dashboard allows administrators to monitor site activities, manage users, properties and bookings...
+                </li>
+            </ul>
+            <div class="mt-2">
+            <h2 class="mt-2 font-bold text-xl text-[#7bbdff]">Technologies Used:</h2>
+                <div class=" mb-4">
+                    <h3 class="text-lg font-semibold text-[#f82a35] ">Frontend</h3>
+                    <ul class="list-disc ml-6">
+                        <li>HTML, CSS, TailwindCSS for responsive and modern design.</li>
+                        <li>JavaScript for dynamic interactions and enhanced user experience.</li>
+                    </ul>
+                </div>
+
+                <div class=" mb-4">
+                    <h3 class="text-lg font-semibold text-[#f82a35]">Backend</h3>
+                    <ul class="list-disc ml-6">
+                        <li>Laravel (PHP Framework) for robust server-side logic, managing bookings, properties, and user authentication.</li>
+                    </ul>
+                </div>
+
+                <div class=" mb-4">
+                    <h3 class="text-lg font-semibold text-[#f82a35]">Database</h3>
+                    <ul class="list-disc ml-6">
+                        <li>MySQL for reliable data storage and management of users, properties, bookings, and reviews.</li>
+                    </ul>
+                </div>
+
+                <div class=" mb-4">
+                    <h3 class="text-lg font-semibold text-[#f82a35]">Payment Integration</h3>
+                    <ul class="list-disc ml-6">
+                        <li>Stripe API for secure, encrypted transactions, handling one-time and recurring payments, with detailed admin logging.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <h3 class="text-lg font-semibold text-[#f82a35]">Email Integration</h3>
+                    <ul class="list-disc ml-6">
+                        <li>Mailtrap in Laravel for automated email notifications like booking confirmations, cancellations, and reminders.</li>
+                    </ul>
+                </div>
+
+                <div class="">
+                    <h3 class="text-lg font-semibold text-[#f82a35]">Real-Time Messaging</h3>
+                    <ul class="list-disc ml-6">
+                        <li>Livewire for real-time chat between users and property managers.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('liens');
+        menu.classList.toggle('show');
+    }
+</script>
+</body>
+</html>

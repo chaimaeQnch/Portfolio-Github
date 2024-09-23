@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset= "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <title>Potfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel = "stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<section id="home" class="header">
+    <nav>
+        <div style="
+            display: flex;
+            justify-content: space-between;
+            width: 100%;">
+            <h1 class= "Titre"><img src="images/logo.png" width="40px" height="38px" />Port<span>folio</span></h1>
+            <button onclick="toggleMenu()" data-collapse-toggle="liens" type="button" class="button menu" aria-controls="navbar-cta" aria-expanded="false">
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+        </div>
+        <ul class="navbar" id="liens">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about-me">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="w-[900px]  mx-auto pb-12">
+        <video class="rounded-lg mt-12  mx-auto" controls autoPlay>
+            <source src="videos/evotech.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <div class="text-white mt-6 ">
+            <h1 class="font-bold text-2xl text-[#f82a35]">EvoTech -  Shapers of the Technological Future.</h1>
+            <p class="mt-4">This is a front-end website showcasing EvoTech's innovative work in fields like aerospace, AI, and bioengineering, offering users a glimpse into the future of technology through a visually engaging experience.</p>
+            <h2 class="mt-2 font-bold text-xl text-[#7bbdff]">Technologies Used:</h2>
+            <h3 class="text-lg font-semibold text-[#f82a35] ">Frontend</h3>
+            <ul class="list-disc ml-6">
+                <li>HTML, CSS, JS and Bootstrap  for responsive and modern design.</li>
+            </ul>
+        </div>
+            
+    </div>
+</section>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('liens');
+        menu.classList.toggle('show');
+    }
+</script>
+</body>
+</html>

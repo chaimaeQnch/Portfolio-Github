@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset= "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potfolio</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel = "stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<section id="home" class="header">
+    <nav>
+        <div style="
+            display: flex;
+            justify-content: space-between;
+            width: 100%;">
+            <h1 class= "Titre"><img src="images/logo.png" width="40px" style="height:38px !important" />Port<span>folio</span></h1>
+            <button onclick="toggleMenu()" data-collapse-toggle="liens" type="button" class="button menu" aria-controls="navbar-cta" aria-expanded="false">
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+        </div>
+        <ul class="navbar" id="liens">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about-me">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+
+    <div class=" projets grid grid-cols-2 max-lg:grid-cols-1 max-lg: gap-16 mt-16 pb-9 mx-auto ">
+        <a href="reservify.html" class="card projet1 bg-[#cacaca] rounded-2xl overflow-hidden">
+            <img class="h-80 w-full" src="images/reservify.png" alt="">
+            <div class="mt-4">
+                <h1 class="pl-4 font-bold ">Web application for online accommodation reservations</h1>
+                <div class="prj1 flex items-center justify-end pr-4 pt-2">
+                    <p class="p-2">Read more</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                </div>
+            </div>
+        </a>
+        <a href="powerGym.html" class="card projet2 bg-[#cacaca] rounded-2xl overflow-hidden">
+            <img class="h-80 w-full" src="images/gym.png" alt="">
+            <div class="mt-4">
+                <h1 class="pl-4 font-bold">Web Application for gym management </h1>
+                <div class="prj2 flex items-center justify-end pr-4 pt-2">
+                    <p class=" p-2">Read more</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                </div>
+            </div>
+        </a>
+        <a href="location.html" class="card projet3 bg-[#cacaca] rounded-2xl overflow-hidden">
+            <img class="h-80 w-full" src="images/location.png" alt="">
+            <div class="mt-4">
+                <h1 class="pl-4 font-bold">Web Application for Car Rentals</h1>
+                <div class="prj3 flex items-center justify-end pr-4 pt-2">
+                    <p class=" p-2">Read more</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                </div>
+            </div>
+        </a>
+        <a href="evotech.html" class="card projet4 bg-[#cacaca] rounded-2xl overflow-hidden">
+            <img class="h-80 w-full" src="images/evotech.png" alt="">
+            <div class="mt-4">
+                <h1 class="pl-4 font-bold">EvoTech Front-End Innovations</h1>
+                <div class="prj4 flex items-center justify-end pr-4 pt-2">
+                    <p class=" p-2">Read more</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+<script src="script2.js"></script>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('liens');
+        menu.classList.toggle('show');
+    }
+</script>
+</body>
+</html>
