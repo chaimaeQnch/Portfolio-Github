@@ -515,3 +515,30 @@ transition: var(--transition);
     }
 }
 
+@media (max-width:500px){
+
+    .mypicture img{
+        width: 250px;
+        height: 250px;
+    }
+    .mypicture{
+        left: 10px;
+    }
+    .txt{
+        width: 300px;
+        
+    }
+    .about img {
+        width: 300px;
+        height: 300px;
+    }
+    .card__bx{
+        width: 250px;
+    }
+    .info{
+        width: 280px;
+    }
+    .NP{
+        font-size: 25px;
+    }
+}
