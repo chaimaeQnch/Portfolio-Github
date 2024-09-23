@@ -160,9 +160,7 @@ h4{
     width: 350px;
     height: 430px;
 }
-.experience{
-    width: 550px;
-}
+
 .about-me{
     width: 1130px;
     max-width: 95%;
@@ -515,7 +513,7 @@ transition: var(--transition);
     }
 }
 
-@media (max-width:500px){
+@media (max-width:450px){
 
     .mypicture img{
         width: 250px;
@@ -524,10 +522,7 @@ transition: var(--transition);
     .mypicture{
         left: 10px;
     }
-    .txt{
-        width: 300px;
-        
-    }
+    
     .about img {
         width: 300px;
         height: 300px;
@@ -537,6 +532,7 @@ transition: var(--transition);
     }
     .info{
         width: 280px;
+        margin: 50px 0 0 0;
     }
     .NP{
         font-size: 25px;
